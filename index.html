@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="./style.css">
+   <title>Lista de Tarefas</title>
+</head>
+<body>
+   <header class="topBar">
+      <nav class="titleWrapper">
+         <p class="pageTitle">MY TASK'S</p>
+         <input class="searchBar" type="text" placeholder="Pesquisar tarefa">
+      </nav>
+   </header>
+   <main>
+      <section class="inputTask">
+         <h2 class="addTaskTitle">Inserir tarefa</h2>
+         <div class="addTaskWrapper">
+            <input type="text" class="taskName" id="taskName" placeholder="Digitar título da tarefa">
+            <select name="taskType" id="taskType" class="taskType">
+               <option value="" disabled selected>Selecionar tipo</option>
+               <option value="">Estudo</option>
+               <option value="">Trabalho</option>
+               <option value="">Lazer</option>
+               <option value="">Extra</option>
+            </select>
+         </div>
+         <button class="addTaskBtn" id="addTaskBtn">Adicionar Tarefa na Lista</button>
+      </section>
+      <section class="tasks">
+         <h2 class="taskTitle">Tarefas</h2>
+         <div>
+            <ul id="taskList"></ul>
+         </div>
+      </section>
+   </main>
+   <script src="./script.js"></script>   
+</body>
+</html>
